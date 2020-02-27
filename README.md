@@ -1,0 +1,1 @@
+# azamiline's vimrc
