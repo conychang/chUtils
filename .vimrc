@@ -1,27 +1,3 @@
-" if has('vim_starting')
-
-" 初回起動時のみruntimepathにneobundleのパスを指定する
-"set runtimepath+=~/.vim/bundle/neobundle.vim/
-"endif
-
-" NeoBundleを初期化
-"call neobundle#begin(expand('~/.vim/bundle/'))
-
-" インストールするプラグインをここに記述
-"NeoBundle 'Shougo/unite.vim'
-"NeoBundle 'Shougo/vimfiler'
-"NeoBundle 'sbl/scvim'
-"NeoBundle 'tomasr/molokai'
-"NeoBundle 'simonhicks/foxdot.vim'
-"NeoBundle 'whatyouhide/vim-gotham'
-"NeoBundle 'python-mode/python-mode'
-" NeoBundle 'neovimhaskell/haskell-vim'
-"NeoBundle 'tpope/vim-commentary'
-"NeoBundle 'munshkr/vim-tidal' , '0.3.3-tidal-1.0.0-pre'
-" NeoBundle 'munshkr/vim-tidal'
-" NeoBundle 'kana/vim-filetype-haskell'
-"call neobundle#end()
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'sbl/scvim'
@@ -116,71 +92,110 @@ inoremap <<Enter> <><Left><CR><ESC><S-o>
 " Tidal Templates
 
 function! Stack()
-    :r ~/tidal_templates/stack.tidal
+    :r ~/okaowada/okachiho-tidal/templates/stack.tidal
 endfunction
 command Stack :call Stack()
 
+
 function! Cdrum1()
-    :r ~/tidal_templates/drum1.tidal
+    :r ~/okaowada/okachiho-tidal/templates/drum1.tidal
 endfunction
 command Cdrum1 :call Cdrum1()
 
 function! Cdrum2()
-    :r ~/tidal_templates/drum2.tidal
+    :r ~/okaowada/okachiho-tidal/templates/drum2.tidal
 endfunction
 command Cdrum2 :call Cdrum2()
 
+function! Cdrum3()
+    :r ~/okaowada/okachiho-tidal/templates/drum3.tidal
+endfunction
+command Cdrum3 :call Cdrum3()
+
+
 function! Ckick1()
-    :r ~/tidal_templates/kicks1.tidal
+    :r ~/okaowada/okachiho-tidal/templates/kicks1.tidal
 endfunction
 command Ckick1 :call Ckick1()
 
 function! Ckick2()
-    :r ~/tidal_templates/kicks2.tidal
+    :r ~/okaowada/okachiho-tidal/templates/kicks2.tidal
 endfunction
 command Ckick2 :call Ckick2()
 
 function! Ckick3()
-    :r ~/tidal_templates/kicks3.tidal
+    :r ~/okaowada/okachiho-tidal/templates/kicks3.tidal
 endfunction
 command Ckick3 :call Ckick3()
 
+
+function! Chat1()
+    :r ~/okaowada/okachiho-tidal/templates/hat1.tidal
+endfunction
+command Chat1 :call Chat1()
+
+
+function! Cset1()
+    :r ~/okaowada/okachiho-tidal/templates/set1.tidal
+endfunction
+command Cset1 :call Cset1()
+
+
 function! Cpad1()
-    :r ~/tidal_templates/pad1.tidal
+    :r ~/okaowada/okachiho-tidal/templates/pad1.tidal
 endfunction
 command Cpad1 :call Cpad1()
 
 function! Cpad2()
-    :r ~/tidal_templates/pad2.tidal
+    :r ~/okaowada/okachiho-tidal/templates/pad2.tidal
 endfunction
 command Cpad2 :call Cpad2()
 
+function! Cpad3()
+    :r ~/okaowada/okachiho-tidal/templates/pad3.tidal
+endfunction
+command Cpad3 :call Cpad3()
+
+
 function! Cef1()
-    :r ~/tidal_templates/ef1.tidal
+    :r ~/okaowada/okachiho-tidal/templates/ef1.tidal
 endfunction
 command Cef1 :call Cef1()
 
+
 function! Carpy1()
-    :r ~/tidal_templates/arpy1.tidal
+    :r ~/okaowada/okachiho-tidal/templates/arpy1.tidal
 endfunction
 command Carpy1 :call Carpy1()
 
+function! Carpy2()
+    :r ~/okaowada/okachiho-tidal/templates/arpy2.tidal
+endfunction
+command Carpy2 :call Carpy2()
+
+
 function! Angel1()
-    :r ~/tidal_templates/angel1.tidal
+    :r ~/okaowada/okachiho-tidal/templates/angel1.tidal
 endfunction
 command Angel1 :call Angel1()
 
 function! C160_1()
-    :r ~/tidal_templates/160_1.tidal
+    :r ~/okaowada/okachiho-tidal/templates/160_1.tidal
 endfunction
 command C160no1 :call C160_1()
 
+function! Cvoice1()
+    :r ~/okaowada/okachiho-tidal/templates/voice1.tidal
+endfunction
+command Cvoice1 :call Cvoice1()
 
+function! Kasanegi1()
+    :r ~/okaowada/okachiho-tidal/templates/kasanegi1.tidal
+endfunction
+command Kasanegi1 :call Kasanegi1()
 
-
-
-
-
-
-
+function! Kasanegi2()
+    :r ~/okaowada/okachiho-tidal/templates/kasanegi2.tidal
+endfunction
+command Kasanegi2 :call Kasanegi2()
 
