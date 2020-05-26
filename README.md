@@ -1,1 +1,1 @@
-# azamiline's vimrc
+# azamiline's utilities
