@@ -47,8 +47,9 @@ syntax enable
 colorscheme azamiline
 highlight Normal ctermbg=none
 
-" ヤンクでクリップボードにコピー
-set clipboard=unnamed,autoselect
+" ヤンクでクリップボードにコピー 
+" *Use 'unnamed' in MacOS. / Use 'unnamedplus' in Linux System.
+set clipboard=unnamedplus
 
 " fold設定
 set foldmethod=marker
